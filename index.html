@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Randall "Memphis" Raines</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0d0d0d;
+    font-family: 'Inter', sans-serif;
+    color: #d8d8d8;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  .page {
+    width: 900px;
+    background: linear-gradient(180deg, #161616 0%, #101010 100%);
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 0 60px rgba(0,0,0,.8);
+    position: relative;
+    overflow: hidden;
+  }
+  .stripe {
+    height: 14px;
+    background: repeating-linear-gradient(45deg, #e8a317 0 20px, #111 20px 40px);
+  }
+  header {
+    display: flex;
+    gap: 30px;
+    padding: 35px 40px 30px;
+    border-bottom: 2px solid #e8a317;
+    position: relative;
+  }
+  .photo {
+    width: 280px;
+    min-width: 280px;
+    height: 280px;
+    border: 4px solid #e8a317;
+    position: relative;
+    box-shadow: 0 0 25px rgba(232,163,23,.25);
+  }
+  .photo img { width: 100%; height: 100%; object-fit: cover; filter: contrast(1.1) saturate(.85); }
+  .photo .tag {
+    position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%);
+    background: #e8a317; color: #111; font-family: 'Bebas Neue'; font-size: 20px;
+    padding: 2px 16px; letter-spacing: 2px; white-space: nowrap;
+  }
+  .title small {
+    font-family: 'Special Elite'; color: #e8a317; font-size: 14px; letter-spacing: 3px;
+  }
+  .title h1 {
+    font-family: 'Bebas Neue'; font-size: 64px; line-height: .95; color: #fff; letter-spacing: 2px;
+    margin: 6px 0 4px;
+  }
+  .title h1 span { color: #e8a317; }
+  .info { margin-top: 14px; font-size: 14px; line-height: 1.9; }
+  .info b { color: #e8a317; font-weight: 600; }
+  .stamp {
+    position: absolute; top: 30px; right: 30px;
+    font-family: 'Special Elite'; color: #b3261e; border: 3px solid #b3261e;
+    padding: 6px 12px; font-size: 18px; transform: rotate(12deg); opacity: .8;
+  }
+  section { padding: 28px 40px; border-bottom: 1px solid #222; }
+  h2 {
+    font-family: 'Bebas Neue'; font-size: 34px; color: #e8a317; letter-spacing: 2px;
+    margin-bottom: 14px; display: flex; align-items: center; gap: 12px;
+  }
+  h2::after { content: ""; flex: 1; height: 1px; background: #333; }
+  p { font-size: 14.5px; line-height: 1.75; margin-bottom: 12px; text-align: justify; }
+  p strong, li strong { color: #fff; }
+  .highlight {
+    border-left: 4px solid #e8a317; background: #1c1a14; padding: 12px 18px;
+    font-weight: 600; color: #fff; margin: 14px 0;
+  }
+  .eleanor {
+    background: linear-gradient(90deg, #1f1a10, #141414); border: 1px solid #3a3020;
+    padding: 18px 22px; margin: 16px 0;
+  }
+  .eleanor h3 { font-family: 'Bebas Neue'; font-size: 26px; color: #fff; letter-spacing: 2px; }
+  ul { list-style: none; }
+  ul li { font-size: 14.5px; line-height: 1.7; padding-left: 22px; position: relative; margin-bottom: 6px; }
+  ul li::before { content: "▸"; color: #e8a317; position: absolute; left: 0; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 30px; }
+  .flaw { background: #1d1212; border: 1px solid #4a1f1f; padding: 14px 18px; margin-top: 16px; }
+  .flaw b { color: #e05a4f; font-family: 'Bebas Neue'; font-size: 22px; letter-spacing: 1px; }
+  .code { counter-reset: c; }
+  .code div {
+    counter-increment: c; display: flex; gap: 16px; align-items: flex-start;
+    background: #181818; border: 1px solid #262626; padding: 12px 16px; margin-bottom: 8px;
+  }
+  .code div::before {
+    content: counter(c); font-family: 'Bebas Neue'; font-size: 36px; color: #e8a317; line-height: 1;
+    min-width: 26px;
+  }
+  .code b { color: #fff; display: block; font-size: 15px; }
+  .code span { font-size: 13.5px; color: #aaa; }
+  blockquote {
+    font-family: 'Special Elite'; font-size: 19px; color: #fff; text-align: center;
+    line-height: 1.6; padding: 10px 30px; position: relative;
+  }
+  blockquote::before { content: "“"; font-size: 80px; color: #e8a317; position: absolute; left: 0; top: -20px; }
+  .short { background: #141414; border: 1px dashed #444; padding: 18px 22px; }
+  footer {
+    text-align: center; padding: 18px; font-family: 'Bebas Neue'; letter-spacing: 4px;
+    color: #555; font-size: 16px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="stripe"></div>
+
+  <header>
+    <div class="stamp">CONFIDENCIAL</div>
+    <div class="photo">
+      <img src="https://kappa.lol/K3jW4U" alt="Memphis">
+      <div class="tag">"MEMPHIS"</div>
+    </div>
+    <div class="title">
+      <small>ARQUIVO DE PERSONAGEM // LOS SANTOS</small>
+      <h1>RANDALL<br><span>"MEMPHIS"</span><br>RAINES</h1>
+      <div class="info">
+        <b>Idade:</b> 41 anos<br>
+        <b>Naturalidade:</b> Los Santos, San Andreas<br>
+        <b>Profissão pública:</b> Mecânico de restauração de clássicos<br>
+        <b>Passado oculto:</b> Ladrão de carros lendário, conhecido por nunca usar violência desnecessária
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Lore</h2>
+    <p>Randall Raines nunca foi apenas mais um ladrão de carros. Nas ruas, seu nome era dito em voz baixa, quase como uma lenda: <strong>Memphis</strong>.</p>
+    <p>Durante anos, Memphis foi considerado o melhor no que fazia. Ele não roubava por impulso, não agia como um criminoso comum e nunca tratou carros como simples mercadoria. Para ele, cada veículo tinha personalidade, história e temperamento. Ele sabia reconhecer um motor alterado pelo som, perceber uma suspensão mexida a metros de distância e identificar um clássico raro apenas pelo desenho dos faróis.</p>
+    <div class="highlight">Sua regra era simples: sem mortes, sem inocentes envolvidos e sem armas quando não fosse necessário.</div>
+    <p>Memphis construiu uma reputação enorme no submundo de Los Santos. Ele reunia equipes, planejava grandes golpes e conseguia desaparecer antes que a polícia entendesse o que tinha acontecido. Mas, depois de anos vivendo entre perseguições, traições e noites mal dormidas, Randall decidiu abandonar aquela vida.</p>
+    <p><strong>Ele desapareceu do mapa.</strong></p>
+    <p>Por quase seis anos, viveu de forma discreta. Trabalhou restaurando carros antigos, recuperando motores esquecidos em ferros-velhos e ensinando jovens mecânicos a respeitar máquinas em vez de destruí-las. Muitos acreditavam que "Memphis" tinha morrido. Outros diziam que ele estava preso. A verdade era mais simples: Randall Raines estava tentando ser um homem melhor.</p>
+    <p>Até que seu irmão mais novo, <strong>Kip Raines</strong>, resolveu seguir seus passos.</p>
+    <p>Kip cresceu ouvindo histórias sobre Memphis e tentou provar que era capaz de superar o irmão. Porém, sem a paciência, experiência e disciplina de Randall, ele se envolveu com pessoas perigosas demais. Para ganhar respeito, Kip aceitou um serviço impossível: entregar uma grande lista de veículos raros e importados para um poderoso criminoso conhecido como <strong>Calitri</strong>.</p>
+    <p><strong>O trabalho deu errado.</strong></p>
+    <p>A equipe de Kip chamou atenção da polícia, perdeu veículos, deixou rastros e falhou em cumprir o prazo. Calitri não era um homem conhecido por perdoar erros. Quando Memphis descobriu que o irmão tinha uma dívida com ele, percebeu que não podia continuar escondido.</p>
+    <p><strong>Ele voltou.</strong></p>
+    <p>Para salvar Kip, Memphis aceitou realizar um último grande serviço: reunir uma lista de carros extremamente raros em um prazo curto, enquanto a polícia de Los Santos voltava a investigar cada passo do homem que um dia foi seu maior pesadelo.</p>
+    <p>Detetives que conheciam sua fama começaram a procurar sinais do retorno de Memphis. Oficinas clandestinas foram vigiadas, portos passaram a ser monitorados e qualquer roubo de veículo de luxo passou a carregar sua sombra.</p>
+
+    <div class="eleanor">
+      <h3>ELEANOR — SHELBY GT500</h3>
+      <p>Mas havia um carro que continuava assombrando Randall acima de todos os outros. Eleanor não era apenas um carro. Era seu fracasso particular. Em golpes antigos, Memphis tentou levá-la mais de uma vez e todas as vezes algo deu errado. Para ele, aquela máquina representava tudo que tentou deixar para trás: o ego, a adrenalina, a obsessão e a vida que sempre cobrava um preço alto demais.</p>
+    </div>
+
+    <p>Ao retornar ao crime, Memphis percebeu que salvar Kip era apenas parte do problema. A verdadeira questão era se ele conseguiria voltar a ser aquele homem sem se perder novamente.</p>
+    <p><strong>Hoje, Randall "Memphis" Raines vive dividido entre duas vidas:</strong></p>
+    <ul>
+      <li>De dia, é um mecânico reservado, competente e respeitado por quem entende de carros.</li>
+      <li>À noite, antigos contatos começam a procurá-lo para serviços que só alguém como ele seria capaz de organizar.</li>
+      <li>Ele tenta proteger Kip, mas sabe que o irmão ainda quer provar que não vive à sua sombra.</li>
+      <li>A polícia não tem provas suficientes para prendê-lo, mas muitos agentes têm certeza de que Memphis voltou.</li>
+      <li>E Eleanor continua sendo o nome que ele evita dizer em voz alta.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Personalidade</h2>
+    <p>Memphis não é alguém explosivo ou inconsequente. Ele é calculista, observador e costuma falar pouco quando está sob pressão.</p>
+    <ul class="grid">
+      <li>Frio em situações de perigo</li>
+      <li>Protetor com o irmão e a antiga equipe</li>
+      <li>Carismático quando precisa convencer alguém</li>
+      <li>Orgulhoso demais para admitir medo</li>
+      <li>Não tolera violência contra inocentes</li>
+      <li>Dificuldade em confiar em pessoas novas</li>
+      <li>Guarda rancor de quem ameaça sua família</li>
+      <li>Obcecado por carros clássicos e raros</li>
+    </ul>
+    <div class="flaw">
+      <b>DEFEITO CENTRAL</b>
+      <p style="margin:6px 0 0">Memphis acredita que consegue resolver tudo sozinho. Isso faz com que ele esconda problemas, afaste aliados e assuma riscos demais para proteger os outros.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Código de Honra</h2>
+    <div class="code">
+      <div><p style="margin:0"><b>Não matar por dinheiro.</b><span>Memphis é ladrão, não assassino.</span></p></div>
+      <div><p style="margin:0"><b>Não envolver civis.</b><span>Ele evita colocar pessoas inocentes em perigo.</span></p></div>
+      <div><p style="margin:0"><b>Nunca abandonar a própria equipe.</b><span>Mesmo quando alguém erra, ele tenta resolver antes de sacrificar um aliado.</span></p></div>
+      <div><p style="margin:0"><b>Nunca subestimar um carro ou um adversário.</b><span>Seu excesso de confiança já lhe custou caro no passado.</span></p></div>
+      <div><p style="margin:0"><b>Família vem antes do dinheiro.</b><span>Kip é sua maior fraqueza e sua maior motivação.</span></p></div>
+    </div>
+  </section>
+
+  <section>
+    <blockquote>Meu nome é Randall Raines. Alguns me chamavam de Memphis. Eu deixei essa vida para trás há muito tempo… mas parece que ela nunca deixou a mim.</blockquote>
+  </section>
+
+  <section>
+    <h2>Resumo</h2>
+    <div class="short">
+      <p style="margin:0">Randall "Memphis" Raines é um ex-ladrão de carros lendário que abandonou o crime para trabalhar com restauração de veículos clássicos em Los Santos. Conhecido por sua inteligência, habilidade ao volante e código de honra, Memphis voltou ao submundo quando seu irmão mais novo, Kip Raines, se endividou com o perigoso Raymond Calitri após falhar em um grande serviço. Agora, Randall tenta proteger a família, manter sua oficina funcionando e provar que pode viver longe do crime, mesmo sabendo que antigos inimigos, policiais e dívidas do passado continuam à sua procura. Seu maior fantasma atende pelo nome de Eleanor: uma Shelby GT500 que representa tudo que ele nunca conseguiu controlar.</p>
+    </div>
+  </section>
+
+  <footer>LOS SANTOS // FIVEM ROLEPLAY</footer>
+  <div class="stripe"></div>
+</div>
+</body>
+</html>
